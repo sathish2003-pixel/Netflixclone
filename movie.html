@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movies Grid</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Existing styles */
+/* Add new styles for the movies grid */
+
+.movies-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px; /* Space between cards */
+    padding: 20px;
+}
+
+.movie-card {
+    flex-basis: calc(50% - 40px); /* Adjust based on desired spacing */
+    max-width: calc(50% - 40px); /* Ensures no overflow */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 20px; /* Bottom margin for last item in a row */
+}
+
+.movie-card img {
+    width: 100%;
+    height: auto;
+}
+
+.movie-card h2,.movie-card p {
+    text-align: left;
+    padding: 10px;
+}
+
+.ratings {
+    text-align: center;
+    font-size: 14px;
+    color: #777;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Featured Movies</h1>
+    </header>
+    <main>
+        <section class="movies-grid">
+            <!-- Repeat the following structure for each movie -->
+            <div class="movie-card">
+                <img src="./images/kgf.webp" alt="Movie Poster">
+                <h2>Movie Title</h2>
+                <p>Release Date: YYYY-MM-DD</p>
+                <p>Runtime: HH MM</p>
+                <p>Genre: Genre Name</p>
+                <p>Plot Summary:</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <div class="ratings">
+                    <span>User Rating: ★★★☆☆</span>
+                    <span>IMDb Score: 7.8/10</span>
+                </div>
+            </div>
+            <div class="movie-card">
+                <img src="./images/19.webp" alt="Movie Poster">
+                <h2>Movie Title</h2>
+                <p>Release Date: YYYY-MM-DD</p>
+                <p>Runtime: HH MM</p>
+                <p>Genre: Genre Name</p>
+                <p>Plot Summary:</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <div class="ratings">
+                    <span>User Rating: ★★★☆☆</span>
+                    <span>IMDb Score: 7.8/10</span>
+                </div>
+            </div>
+            
+            <div class="movie-card">
+                <img src="./images/highway.webp" alt="Movie Poster">
+                <h2>Movie Title</h2>
+                <p>Release Date: YYYY-MM-DD</p>
+                <p>Runtime: HH MM</p>
+                <p>Genre: Genre Name</p>
+                <p>Plot Summary:</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <div class="ratings">
+                    <span>User Rating: ★★★☆☆</span>
+                    <span>IMDb Score: 7.8/10</span>
+                </div>
+            </div>
+            <div class="movie-card">
+                <img src="./images/teddy.webp" alt="Movie Poster">
+                <h2>Movie Title</h2>
+                <p>Release Date: YYYY-MM-DD</p>
+                <p>Runtime: HH MM</p>
+                <p>Genre: Genre Name</p>
+                <p>Plot Summary:</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <div class="ratings">
+                    <span>User Rating: ★★★☆☆</span>
+                    <span>IMDb Score: 7.8/10</span>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

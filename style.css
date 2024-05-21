@@ -1,0 +1,149 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #141414;
+    color: #ffffff;
+}
+
+header {
+    background-color: #141414;
+    padding: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+}
+
+.hero {
+    text-align: center;
+    padding: 10px 0;
+}
+
+.hero h1 {
+    font-size: 2.5em;
+}
+
+.hero p {
+    font-size: 1.2em;
+}
+
+.featured {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto;
+ 
+ 
+    gap: 10px;
+}
+.movie {
+    position: relative; /* Ensure this is set */
+    background-color: #61616111;
+    padding: 15px;
+    
+    border-radius: 5px;
+    width: 200px;
+    height: 170px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease; /* Smooth transition for transform */
+}
+
+.movie:hover {
+    transform: scale(1.05); /* Optional: Scale up on hover */
+}
+
+
+
+.movie img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease; /* Smooth transition for transform */
+}
+
+.movie:hover img {
+    transform: scale(1.1); /* Zoom in effect on hover */
+}
+
+.movie h3 {
+    margin: 10px 0;
+}
+
+.movie p {
+    color: #cccccc;
+}
+
+footer {
+    background-color: #141414;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+.carousel {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.carousel-inner {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.carousel-inner img {
+    flex: 0 0 auto;
+    width: 100%;
+    height: auto;
+}
+
+.carousel-prev,
+.carousel-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px 20px;
+}
+
+.carousel-prev {
+    left: 10px;
+}
+
+.carousel-next {
+    right: 10px;
+}
+
+.movie input[type="button"] {
+    background-color: #8282825d; /* Blue background */
+    color: #ffffff; /* White text */
+    border: none;
+    padding:10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    margin-top: 10px; /* Adds space above the button */
+}
+
+.movie input[type="button"]:hover {
+    background-color: #ff0000; /* Darker blue on hover */
+}

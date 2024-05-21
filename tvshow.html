@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TV Shows</title>
+    <link rel="stylesheet" href="style.css"> 
+    
+    <style>
+        /* Existing styles */
+/* Add new styles for the TV shows section */
+
+.tv-shows {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.show {
+    width: calc(33.333% - 20px); /* Adjust based on desired number of columns */
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.show img {
+    width: 100%;
+    height: auto;
+}
+
+.show h2 {
+    text-align: center;
+    font-size: 18px;
+    color: #c9c9c9;
+    background-color: rgb(198, 31, 31);
+    padding: 10px 0;
+}
+
+.show p {
+    text-align: center;
+    font-size: 14px;
+    color: #666;
+    padding: 10px 0;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Top TV Shows</h1>
+    </header>
+    <main>
+        <section class="tv-shows">
+            <div class="show">
+                <img src="./images/superchapion.webp" alt="TV Show Poster 1">
+                <h2>TV Show Title 1</h2>
+                <p>Genre: Drama | Seasons: 5</p>
+            </div>
+            <div class="show">
+                <img src="./images/sibgles.webp" alt="TV Show Poster 2">
+                <h2>TV Show Title 2</h2>
+                <p>Genre: Comedy | Seasons: 3</p>
+            </div>
+            <div class="show">
+                <img src="./images/supersinger.webp" alt="TV Show Poster 2">
+                <h2>TV Show Title 2</h2>
+                <p>Genre: Comedy | Seasons: 3</p>
+            </div>
+            <div class="show">
+                <img src="./images/athu.webp" alt="TV Show Poster 2">
+                <h2>TV Show Title 2</h2>
+                <p>Genre: Comedy | Seasons: 3</p>
+            </div>
+            <div class="show">
+                <img src="./images/theri baby.webp" alt="TV Show Poster 2">
+                <h2>TV Show Title 2</h2>
+                <p>Genre: Comedy | Seasons: 3</p>
+            </div>
+            <div class="show">
+                <img src="./images/enhitta.webp" alt="TV Show Poster 2">
+                <h2>TV Show Title 2</h2>
+                <p>Genre: Comedy | Seasons: 3</p>
+            </div>
+           
+        </section>
+    </main>
+</body>
+</html>

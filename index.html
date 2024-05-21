@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotstar</title>
+    <link rel="stylesheet" href="./style.css">
+    
+    <style></style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#" style="color: red;">Home</a></li>
+                <li><a href=".//tvshow.html">TV Shows</a></li>
+                <li><a href="./movie.html">Movies</a></li>
+                <li><a href="./new and popular.html">New & Popular</a></li>
+                <li><a href="./Mylist.html">My List</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+       
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                const carouselPrev = document.querySelector('.carousel-prev');
+                const carouselNext = document.querySelector('.carousel-next');
+                const carouselInner = document.querySelector('.carousel-inner');
+                let currentSlide = 0;
+            
+                function updateCarousel() {
+                    carouselInner.style.transform = `translateX(-${currentSlide * 100}%)`;
+                }
+            
+                carouselPrev.addEventListener('click', function() {
+                    currentSlide = (currentSlide > 0)? currentSlide - 1 : 2;
+                    updateCarousel();
+                });
+            
+                carouselNext.addEventListener('click', function() {
+                    currentSlide = (currentSlide < 3)? currentSlide + 1 : 0;
+                    updateCarousel();
+                });
+            });
+            </script>
+        <section class="hero">
+            <div class="carousel">
+                <div class="carousel-inner">
+                    <img class="hero static-image image-layer" src="./images/mixup.jpg" alt="">
+                    <img src="./images/romeo.jpg" alt="Movie 2">
+                    <img src="./images/ghilli.jpg" alt="Movie 3">
+                    <img src="./images/partner.jpg" alt="Movie 3">
+                    <!-- Add more images as needed -->
+                </div>
+                <button class="carousel-prev"><</button>
+                <button class="carousel-next">></button>
+            </div>
+            <h1>Welcome to Spotstar</h1>
+            <p>Your entertainment, your way.</p>
+        </section>
+        <h2>Featured Movies</h2>
+        <section class="featured">
+            <div class="movie">
+                <img src="./images/laapata.webp" alt="Movie 1">
+                <h3>Movie Title 1</h3>
+                <input type="button" value="Play">
+            </div>
+            <div class="movie">
+                <img src="./images/narcos.jpg" alt="Movie 1">
+                <h3>Movie Title 1</h3>
+                <input type="button" value="Play">
+            </div>
+            <div class="movie">
+                <img src="./images/wednesday.jpg" alt="Movie 1">
+                <h3>Movie Title 1</h3>
+                <input type="button" value="Play">
+            </div>
+            <div class="movie">
+                <img src="./images/escspe.webp" alt="Movie 1">
+                <h3>Movie Title 1</h3>
+                <input type="button" value="Play">
+            </div>
+            <div class="movie">
+                <img src="./images/berlin.jpg" alt="Movie 1">
+                <h3>Movie Title 1</h3>
+                <input type="button" value="Play">
+            </div>
+            <div class="movie">
+                <img src="./images/trnil.webp" alt="Movie 1">
+                <h3>Movie Title 1</h3>
+                <input type="button" value="Play">
+            </div>
+</section>
+<h2>Featured Movies</h2>
+<section class="featured">
+    <div class="movie">
+        <img src="./images/fate.jpg" alt="Movie 1">
+        <h3>Movie Title 1</h3>
+        <input type="button" value="Play">
+    </div>
+    <div class="movie">
+        <img src="./images/alice.jpg" alt="Movie 1">
+        <h3>Movie Title 1</h3>
+        <input type="button" value="Play">
+    </div>
+    <div class="movie">
+        <img src="./images/rain.jpg" alt="Movie 1">
+        <h3>Movie Title 1</h3>
+        <input type="button" value="Play">
+    </div>
+    <div class="movie">
+        <img src="./images/crash.jpg" alt="Movie 1">
+        <h3>Movie Title 1</h3>
+        <input type="button" value="Play">
+    </div>
+    <div class="movie">
+        <img src="./images/true beauty.webp" alt="Movie 1">
+        <h3>Movie Title 1</h3>
+        <input type="button" value="Play">
+    </div>
+    <div class="movie">
+        <img src="./images/its okay.jpg" alt="Movie 1">
+        <h3>Movie Title 1</h3>
+        <input type="button" value="Play">
+    </div>
+</section>
+            <h2>New Movies</h2>
+            <section class="featured">
+                <div class="movie">
+                    <img src="./images/sex education.jpg" alt="Movie 1">
+                    <h3>Movie Title 1</h3>
+                    <input type="button" value="Play">
+                </div>
+                <div class="movie">
+                    <img src="./images/money heist.jpg" alt="Movie 1">
+                    <h3>Movie Title 1</h3>
+                    <input type="button" value="Play">
+                </div>
+                <div class="movie">
+                    <img src="./images/stranger things.jpg" alt="Movie 1">
+                    <h3>Movie Title 1</h3>
+                    <input type="button" value="Play">
+                </div>
+                <div class="movie">
+                    <img src="./images/squid game.jpg" alt="Movie 1">
+                    <h3>Movie Title 1</h3>
+                    <input type="button" value="Play">
+                </div>
+                <div class="movie">
+                    <img src="./images/breaking bad.webp" alt="Movie 1">
+                    <h3>Movie Title 1</h3>
+                    <input type="button" value="Play">
+                </div>
+                <div class="movie">
+                    <img src="./images/she.jpg" alt="Movie 1">
+                    <h3>Movie Title 1</h3>
+                    <input type="button" value="Play">
+                </div>
+    </section>
+        <br><br><br><br><br>
+    </main>
+   
+</body>
+</html>

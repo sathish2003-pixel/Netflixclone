@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New and Popular</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+       
+
+.content-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px;
+}
+
+.item {
+    flex-basis: calc(33.333% - 20px); 
+    max-width: calc(33.333% - 20px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.item img {
+    width: 100%;
+    height: auto;
+}
+
+.item h3 {
+    text-align: center;
+    font-size: 18px;
+    color: #c9c9c9;
+    background-color: rgb(198, 31, 31);
+    padding: 10px 0;
+}
+
+.item p {
+    text-align: center;
+    font-size: 14px;
+    color: #666;
+    padding: 10px 0;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <h1>New and Popular</h1>
+    </header>
+    <main>
+        <section id="new-section" class="content-grid">
+            <h2>New Releases</h2>
+            <div class="item">
+                <img src="./images/night.webp" alt="New Release Movie">
+                <h3>New Release Movie Title</h3>
+                <p>Release Date: YYYY-MM-DD</p>
+            </div>
+            <div class="item">
+                <img src="./images/tv show.webp" alt="New Release TV Show">
+                <h3>New Release TV Show Title</h3>
+                <p>Air Date: YYYY-MM-DD</p>
+            </div>
+           
+        </section>
+        <section id="popular-section" class="content-grid">
+            <h2>Popular Picks</h2>
+            <div class="item">
+                <img src="./images/bigbull.webp" alt="Popular Movie">
+                <h3>Popular Movie Title</h3>
+                <p>Rating: 9.0/10</p>
+            </div>
+            <div class="item">
+                <img src="./images/awaard.webp" alt="Popular TV Show">
+                <h3>Popular TV Show Title</h3>
+                <p>Rating: 8.5/10</p>
+            </div>
+           
+        </section>
+    </main>
+</body>
+</html>
